@@ -11,12 +11,14 @@ export const Menor = () => {
       const Comparacion = () => {
   
   
-          if (num1 < num2) {
-              setResult(`es menor`);
-  
-          }else{
-              setResult('iguales')
-          }
+        if (num1 < num2) {
+          setResult( `${num1} es menor que ${num2}`);
+      } else if (num1 === num2) {
+        setResult( `${num1} es igual que ${num2}`);
+      } else {
+        setResult( `${num1} no es menor que ${num2}`);
+
+      }
       };
   
       return (

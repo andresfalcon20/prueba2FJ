@@ -10,12 +10,13 @@ export const MayorScreen = () => {
 
     const Comparacion = () => {
 
-
         if (num1 > num2) {
-            setResult(`es mayor`);
-
-        }else{
-            setResult('iguales')
+            setResult( `${num1} es mayor que ${num2}`);
+        } else if (num1 === num2) {
+          setResult( `${num1} es igual que ${num2}`);
+        } else {
+          setResult( `${num1} no es mayor que ${num2}`);
+  
         }
     };
 
